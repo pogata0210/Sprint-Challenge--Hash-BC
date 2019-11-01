@@ -10,13 +10,13 @@ def get_indices_of_item_weights(weights, length, limit):
     ht = HashTable(16)
 
     # first construct a hash table
-    for i, weight in enumerate(weights):    # enumerates adds keys
-        hash_table_insert(ht, weight, i)
+    for i, weight in enumerate(weights):    # loop and keep a count of irerations.
+        hash_table_insert(ht, weight, i)        #insert outcome.
 
-    for i, weight in enumerate(weights):
-        j = hash_table_retrieve(ht, limit - weight)
-        if j is not None:
-            if i > j:   # to make sure the larger index is first in the order
+    for i, weight in enumerate(weights):  #loop and keep a count 
+        j = hash_table_retrieve(ht, limit - weight) 
+        if j is not None:  #If such a pair doesn’t exist for the given inputs must reutn none
+            if i > j:   # larger index needs to go first.
                 return (i, j)
 
             else:

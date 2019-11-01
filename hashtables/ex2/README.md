@@ -1,6 +1,7 @@
 # One-Way Flight Trip
 
-You've booked a _really_ cheap one-way flight. Unfortunately, that means you have _tons_ of layovers before you reach your destination. The morning of, you woke up late and had to scramble to the airport to catch your first flight. However, in your rush, you accidentally scrambled all your flight tickets. You don't know the route of your entire trip now!
+You've booked a _really_ cheap one-way flight. Unfortunately, that means you have _tons_ of layovers before you reach your destination. The morning of, you woke up late and had to scramble 
+to the airport to catch your first flight. However, in your rush, you accidentally scrambled all your flight tickets. You don't know the route of your entire trip now!
 
 Write a function `reconstruct_trip` to reconstruct your trip from your mass of flight tickets. Each ticket is represented as a Class with the following form:
 ```
