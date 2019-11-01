@@ -24,6 +24,10 @@ def reconstruct_trip(tickets, length):
     for ticket in tickets:
         if ticket.source == 'NONE': #if none there is no starting point. Therefore it must be the starting point.
             route.append(ticket.destination) #add to list.
-            break          
+            break 
+
+    while len(route) < length:   #while there is more keep looping.
+        next_flight = hash_table_retrieve(hashtable, route[-1]) 
+        route.append(next_flight)       #add to the list  
 
     return route
